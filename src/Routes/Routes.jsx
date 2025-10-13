@@ -14,14 +14,17 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <Home />,
+        loader: () => fetch('./appData.json'),
       },
       {
         path: "/apps",
         element: <Apps />,
+        // loader: () => fetch('/appData.json')
       },
       {
         path: "/installation",
         element: <Installation />,
+        // loader: () => fetch('/appData.json')
       },
     ],
   },

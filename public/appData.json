@@ -1,0 +1,326 @@
+[
+  {
+    "image": "https://picsum.photos/seed/101/400/300",
+    "title": "Game Master Pro",
+    "companyName": "Pixel Forge Studios",
+    "id": 101,
+    "description": "The ultimate companion app for board and video gamers. Track scores, find new games, and connect with other players.",
+    "size": 150.5,
+    "reviews": 15200,
+    "ratingAvg": 4.6,
+    "downloads": 850000,
+    "ratings": [
+      { "name": "1 star", "count": 120 },
+      { "name": "2 star", "count": 200 },
+      { "name": "3 star", "count": 1800 },
+      { "name": "4 star", "count": 4500 },
+      { "name": "5 star", "count": 8580 }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/seed/102/400/300",
+    "title": "Zen Garden Meditation",
+    "companyName": "Calmware Inc.",
+    "id": 102,
+    "description": "Guided meditations, sleep stories, and calming soundscapes to reduce stress and improve focus.",
+    "size": 85.2,
+    "reviews": 32000,
+    "ratingAvg": 4.8,
+    "downloads": 4200000,
+    "ratings": [
+      { "name": "1 star", "count": 50 },
+      { "name": "2 star", "count": 100 },
+      { "name": "3 star", "count": 500 },
+      { "name": "4 star", "count": 8000 },
+      { "name": "5 star", "count": 23350 }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/seed/103/400/300",
+    "title": "Cookbook Creator",
+    "companyName": "Culinary Tech",
+    "id": 103,
+    "description": "Organize, share, and discover new recipes. Features meal planning and grocery list generation.",
+    "size": 65.0,
+    "reviews": 9800,
+    "ratingAvg": 4.5,
+    "downloads": 1100000,
+    "ratings": [
+      { "name": "1 star", "count": 150 },
+      { "name": "2 star", "count": 250 },
+      { "name": "3 star", "count": 1500 },
+      { "name": "4 star", "count": 3900 },
+      { "name": "5 star", "count": 4000 }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/seed/104/400/300",
+    "title": "Money Manager 360",
+    "companyName": "Secure FinSoft",
+    "id": 104,
+    "description": "Track your expenses, set budgets, and achieve your financial goals with insightful reports.",
+    "size": 45.1,
+    "reviews": 55000,
+    "ratingAvg": 4.7,
+    "downloads": 7500000,
+    "ratings": [
+      { "name": "1 star", "count": 80 },
+      { "name": "2 star", "count": 120 },
+      { "name": "3 star", "count": 800 },
+      { "name": "4 star", "count": 15000 },
+      { "name": "5 star", "count": 39000 }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/seed/105/400/300",
+    "title": "Star Gazer Live",
+    "companyName": "Cosmic Apps",
+    "id": 105,
+    "description": "Identify stars, constellations, and planets in real-time by pointing your phone at the sky.",
+    "size": 250.8,
+    "reviews": 7200,
+    "ratingAvg": 4.9,
+    "downloads": 950000,
+    "ratings": [
+      { "name": "1 star", "count": 10 },
+      { "name": "2 star", "count": 20 },
+      { "name": "3 star", "count": 70 },
+      { "name": "4 star", "count": 1200 },
+      { "name": "5 star", "count": 5900 }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/seed/106/400/300",
+    "title": "Pro Photo Edit",
+    "companyName": "Lens Craft Studios",
+    "id": 106,
+    "description": "Advanced photo editing with professional filters, layer support, and retouching tools.",
+    "size": 180.0,
+    "reviews": 95000,
+    "ratingAvg": 4.4,
+    "downloads": 12000000,
+    "ratings": [
+      { "name": "1 star", "count": 800 },
+      { "name": "2 star", "count": 1500 },
+      { "name": "3 star", "count": 15000 },
+      { "name": "4 star", "count": 35000 },
+      { "name": "5 star", "count": 42700 }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/seed/107/400/300",
+    "title": "Lingua Leap",
+    "companyName": "Global EdTech",
+    "id": 107,
+    "description": "Learn a new language with fun, bite-sized lessons and interactive exercises.",
+    "size": 110.3,
+    "reviews": 45000,
+    "ratingAvg": 4.6,
+    "downloads": 5800000,
+    "ratings": [
+      { "name": "1 star", "count": 100 },
+      { "name": "2 star", "count": 300 },
+      { "name": "3 star", "count": 2000 },
+      { "name": "4 star", "count": 15000 },
+      { "name": "5 star", "count": 27600 }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/seed/108/400/300",
+    "title": "Fit Track Daily",
+    "companyName": "Health Metrics",
+    "id": 108,
+    "description": "Monitor your steps, sleep, and workouts. Personalized plans for every fitness level.",
+    "size": 55.7,
+    "reviews": 61000,
+    "ratingAvg": 4.5,
+    "downloads": 9200000,
+    "ratings": [
+      { "name": "1 star", "count": 250 },
+      { "name": "2 star", "count": 350 },
+      { "name": "3 star", "count": 5000 },
+      { "name": "4 star", "count": 25400 },
+      { "name": "5 star", "count": 30000 }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/seed/109/400/300",
+    "title": "Weather Now Global",
+    "companyName": "Atmosphere Data",
+    "id": 109,
+    "description": "Accurate, real-time weather forecasts with minute-by-minute precipitation updates.",
+    "size": 30.2,
+    "reviews": 88000,
+    "ratingAvg": 4.3,
+    "downloads": 15000000,
+    "ratings": [
+      { "name": "1 star", "count": 500 },
+      { "name": "2 star", "count": 1000 },
+      { "name": "3 star", "count": 15000 },
+      { "name": "4 star", "count": 35000 },
+      { "name": "5 star", "count": 36500 }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/seed/110/400/300",
+    "title": "Digital Canvas",
+    "companyName": "Art Flow Software",
+    "id": 110,
+    "description": "A powerful drawing application with multiple brushes, layers, and color palettes for digital artists.",
+    "size": 220.6,
+    "reviews": 18000,
+    "ratingAvg": 4.7,
+    "downloads": 2500000,
+    "ratings": [
+      { "name": "1 star", "count": 70 },
+      { "name": "2 star", "count": 130 },
+      { "name": "3 star", "count": 1800 },
+      { "name": "4 star", "count": 5000 },
+      { "name": "5 star", "count": 11000 }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/seed/111/400/300",
+    "title": "PodSphere Player",
+    "companyName": "Audio Waves Co.",
+    "id": 111,
+    "description": "Discover, subscribe, and listen to millions of podcasts with offline support and custom playlists.",
+    "size": 40.5,
+    "reviews": 21000,
+    "ratingAvg": 4.8,
+    "downloads": 3000000,
+    "ratings": [
+      { "name": "1 star", "count": 30 },
+      { "name": "2 star", "count": 70 },
+      { "name": "3 star", "count": 500 },
+      { "name": "4 star", "count": 6000 },
+      { "name": "5 star", "count": 14400 }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/seed/112/400/300",
+    "title": "DocScan Pro",
+    "companyName": "Paperless Solutions",
+    "id": 112,
+    "description": "Scan any document or image and convert it to text using advanced OCR technology.",
+    "size": 75.9,
+    "reviews": 12000,
+    "ratingAvg": 4.4,
+    "downloads": 1800000,
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 300 },
+      { "name": "3 star", "count": 1800 },
+      { "name": "4 star", "count": 4200 },
+      { "name": "5 star", "count": 5500 }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/seed/113/400/300",
+    "title": "City Navigator GPS",
+    "companyName": "RoadWise Tech",
+    "id": 113,
+    "description": "Turn-by-turn navigation with real-time traffic updates and offline map downloads.",
+    "size": 150.0,
+    "reviews": 75000,
+    "ratingAvg": 4.2,
+    "downloads": 10000000,
+    "ratings": [
+      { "name": "1 star", "count": 1500 },
+      { "name": "2 star", "count": 2500 },
+      { "name": "3 star", "count": 10000 },
+      { "name": "4 star", "count": 30000 },
+      { "name": "5 star", "count": 31000 }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/seed/114/400/300",
+    "title": "Movie Maker Mobile",
+    "companyName": "CineTools Inc.",
+    "id": 114,
+    "description": "Professional video editing on your phone. Trim, merge, add effects, and export in 4K.",
+    "size": 350.5,
+    "reviews": 40000,
+    "ratingAvg": 4.5,
+    "downloads": 5500000,
+    "ratings": [
+      { "name": "1 star", "count": 300 },
+      { "name": "2 star", "count": 700 },
+      { "name": "3 star", "count": 5000 },
+      { "name": "4 star", "count": 15000 },
+      { "name": "5 star", "count": 19000 }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/seed/115/400/300",
+    "title": "Home Monitor Secure",
+    "companyName": "SmartGuard Systems",
+    "id": 115,
+    "description": "Remote access and control for your smart home security cameras and devices.",
+    "size": 90.1,
+    "reviews": 5000,
+    "ratingAvg": 4.1,
+    "downloads": 750000,
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 300 },
+      { "name": "3 star", "count": 1000 },
+      { "name": "4 star", "count": 1500 },
+      { "name": "5 star", "count": 2000 }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/seed/116/400/300",
+    "title": "TuneFlow Music",
+    "companyName": "Harmonic Digital",
+    "id": 116,
+    "description": "Stream millions of songs ad-free, create personalized playlists, and discover new artists.",
+    "size": 60.4,
+    "reviews": 120000,
+    "ratingAvg": 4.7,
+    "downloads": 25000000,
+    "ratings": [
+      { "name": "1 star", "count": 500 },
+      { "name": "2 star", "count": 1000 },
+      { "name": "3 star", "count": 5000 },
+      { "name": "4 star", "count": 40000 },
+      { "name": "5 star", "count": 73500 }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/seed/117/400/300",
+    "title": "OrganizeIt Pro",
+    "companyName": "Productivity Hub",
+    "id": 117,
+    "description": "A simple and powerful task manager with reminders, recurring tasks, and collaboration features.",
+    "size": 35.8,
+    "reviews": 11000,
+    "ratingAvg": 4.6,
+    "downloads": 1500000,
+    "ratings": [
+      { "name": "1 star", "count": 50 },
+      { "name": "2 star", "count": 150 },
+      { "name": "3 star", "count": 1300 },
+      { "name": "4 star", "count": 4000 },
+      { "name": "5 star", "count": 5500 }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/seed/118/400/300",
+    "title": "Infinite Pages Reader",
+    "companyName": "Literary Software",
+    "id": 118,
+    "description": "Access thousands of ebooks and audiobooks. Customizable reading experience with night mode.",
+    "size": 70.0,
+    "reviews": 28000,
+    "ratingAvg": 4.5,
+    "downloads": 3800000,
+    "ratings": [
+      { "name": "1 star", "count": 100 },
+      { "name": "2 star", "count": 200 },
+      { "name": "3 star", "count": 2000 },
+      { "name": "4 star", "count": 10000 },
+      { "name": "5 star", "count": 15700 }
+    ]
+  }
+]
