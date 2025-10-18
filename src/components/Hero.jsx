@@ -4,9 +4,9 @@ import apple from "../assets/apple.png";
 
 function Hero() {
   return (
-    <div className="flex flex-col items-center justify-center">
+    <div className="flex flex-col items-center justify-center bg-[#EEEEEE]">
       <div className="top">
-        <h1 className="text-5xl font-bold text-center pt-20 mb-6">
+        <h1 className="text-5xl font-bold text-center text-black pt-20 mb-6">
           We Build <br />
           <span className="text-[#9F62F2]">Productive</span> Apps
         </h1>

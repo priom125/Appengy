@@ -6,7 +6,7 @@ function Card({ app }) {
   return (
     <div className="w-[348px] h-435px] p-4 bg-white">
       <img src={app.image} alt="" className="rounded mb-3 w-[316px] h-[316px]" />
-      <h1 className="text-2xl font-semibold">{app.title}</h1>
+      <h1 className="text-2xl font-semibold text-black">{app.title}</h1>
       <div className="flex justify-between items-center mt-6">
         <div className="flex gap-3 bg-[#F1F5E8] items-center justify-center p-2">
           <img src={downloads} alt="" className="w-4 h-4" />

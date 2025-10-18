@@ -13,7 +13,7 @@ function Home() {
       <Banner />
 
       <div className="bg-[#EEEEEE] flex items-center flex-col justify-center py-10">
-        <h1 className="text-5xl font-bold text-center pt-20 mb-6">
+        <h1 className="text-5xl font-bold text-black text-center pt-20 mb-6">
           Trending Apps
         </h1>
         <p className="text-[#627382] w-[1140px] text-center mx-auto mb-6">
@@ -25,7 +25,7 @@ function Home() {
           ))}
         </div>
         <div className="flex items-center justify-center w-[145px] h-[48px]">
-        <NavLink to={"/apps"} className="btn bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-white">
+        <NavLink to={"/apps"} className="btn bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-white border-0">
           Show All
         </NavLink>
       </div>

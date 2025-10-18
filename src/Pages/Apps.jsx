@@ -7,14 +7,14 @@ function Apps() {
   return (
     <div>
       <div className="bg-[#EEEEEE] flex items-center flex-col justify-center py-10">
-        <h1 className="text-5xl font-bold text-center pt-20 mb-6">
+        <h1 className="text-5xl font-bold text-center pt-20 mb-6 text-black">
           Our All Applications
         </h1>
         <p className="text-[#627382] w-[1140px] text-center mx-auto mb-6">
           Explore All Apps on the Market developed by us. We code for Millions
         </p>
         <div className="flex justify-between items-center w-[1440px] mt-10">
-          <p className="text-xl font-semibold">{AppData.length} Apps Found </p>
+          <p className="text-xl font-semibold text-black">{AppData.length} Apps Found </p>
           <label className="input bg-transparent outline-none">
             <svg
               className="h-[1em] opacity-50"

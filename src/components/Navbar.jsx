@@ -4,7 +4,7 @@ import logo from "../assets/logo.png";
 
 function Navbar() {
   return (
-    <div className="navbar bg-base-100 shadow-sm">
+    <div className="navbar bg-white text-black shadow-sm">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -60,7 +60,7 @@ function Navbar() {
         </ul>
       </div>
       <div className="navbar-end">
-        <NavLink className="btn bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-white">Contribute</NavLink>
+        <NavLink className="btn bg-gradient-to-r from-[#632EE3] to-[#9F62F2] border-0 text-white">Contribute</NavLink>
       </div>
     </div>
   );
