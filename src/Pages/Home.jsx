@@ -3,10 +3,15 @@ import Hero from "../components/Hero";
 import Banner from "../components/Banner";
 import { NavLink, useLoaderData } from "react-router";
 import Card from "../components/Card";
+// import useProducts from "../hooks/useProducts";
 
 function Home() {
   const AppData = useLoaderData();
   console.log(AppData);
+
+  // const [products, error, loading] = useProducts()
+  // const AppData = products;
+  
   return (
     <div className="mx-auto">
       <Hero />
