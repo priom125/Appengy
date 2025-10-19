@@ -8,16 +8,26 @@ const useProducts = () => {
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
 
-
     useEffect(() => {
-        setLoading(ture)
-        axios('./appData.json')
-        .then(data => setProducts(data.data))
-        .catch(err => setError(err))
-        .finally(() => setLoading(false))
-    },[])
+        
+        setLoading(true);
 
-return [products, error , loading]
+        
+        axios('/appData.json') 
+        .then(response => { 
+            setProducts(response.data);
+            setError(null); 
+        })
+        .catch(err => {
+            console.error("Failed to fetch products:", err);
+            setError(err);
+        })
+        .finally(() => {
+            setLoading(false);
+        });
+        
+    }, []); 
+    return [products, loading, error];
 }
 
 export default useProducts;

@@ -1,9 +1,11 @@
 import React from "react";
 import downloads from "../assets/icon-downloads.png";
 import ratings from "../assets/icon-ratings.png";
+import { Link } from "react-router";
 
 function Card({ app }) {
   return (
+    <Link to={`/apps/${app.id}`}>
     <div className="w-[348px] h-435px] p-4 bg-white">
       <img src={app.image} alt="" className="rounded mb-3 w-[316px] h-[316px]" />
       <h1 className="text-2xl font-semibold text-black">{app.title}</h1>
@@ -18,6 +20,7 @@ function Card({ app }) {
         </div>
       </div>
     </div>
+    </Link>
   );
 }
 
