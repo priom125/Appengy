@@ -10,7 +10,9 @@
     "ratingAvg": 4.6,
     "downloads": 850000,
     "ratings": [
-      { "name": "1 star", "count": 120 },
+      { "name": "1 star", 
+      "count": 120 
+    },
       { "name": "2 star", "count": 200 },
       { "name": "3 star", "count": 1800 },
       { "name": "4 star", "count": 4500 },
