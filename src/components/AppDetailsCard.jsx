@@ -1,11 +1,28 @@
 import React from "react";
 import downloadsIMG from "../assets/icon-downloads.png";
 import avgRatings from "../assets/icon-ratings.png";
+import review from "../assets/icon-review.png";
 import { Bar, BarChart, CartesianGrid, Legend, Tooltip, XAxis, YAxis } from "recharts";
+
 
 function AppDetailsCard({ app }) {
   const ratings = app.ratings;
   //   console.log(ratings);
+
+  const handleInstall = () => {
+    const existingList = JSON.parse(localStorage.getItem('installed'))
+    let UpdatedList = []
+    if (existingList) {
+      const isDuplicate = existingList.some(a=> a.id === app.id)
+      if (isDuplicate) {
+        return alert("Already Installed")
+      }
+      UpdatedList = [...existingList, app]
+    }else{
+      UpdatedList.push(app)
+    }
+     localStorage.setItem('installed', JSON.stringify(UpdatedList))
+  }
   return (
     <div className="bg-[#EEEEEE]  p-20 text-black">
       <div className="flex gap-10">
@@ -33,12 +50,14 @@ function AppDetailsCard({ app }) {
               <p className="text-2xl font-bold">{app.ratingAvg}</p>
             </div>
             <div className="gap-4 mt-4 justify-center items-center">
-              <img src={downloadsIMG} alt="" />
+              <img src={review} alt="" />
               <p className="text-[#627382]">Total Reviews</p>
               <p className="text-2xl font-bold">{app.reviews}</p>
             </div>
           </div>
-          <button className="btn mt-4 text-white bg-[#00D390] outline-0 border-0">
+          <button 
+          onClick={handleInstall}
+          className="btn mt-4 text-white bg-[#00D390] outline-0 border-0">
             Install Now {app.size} MB
           </button>
         </div>
