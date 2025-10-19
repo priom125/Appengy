@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router";
 import logo from "../assets/logo.png";
+import github from "../assets/github.png";
 
 function Navbar() {
   return (
@@ -60,7 +61,9 @@ function Navbar() {
         </ul>
       </div>
       <div className="navbar-end">
-        <NavLink className="btn bg-gradient-to-r from-[#632EE3] to-[#9F62F2] border-0 text-white">Contribute</NavLink>
+        <NavLink to={"https://github.com/priom125"} className="btn bg-gradient-to-r from-[#632EE3] to-[#9F62F2] border-0 text-white">
+          <img src={github} alt="" />
+          Contribute</NavLink>
       </div>
     </div>
   );

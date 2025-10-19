@@ -1,6 +1,7 @@
 import hero from "../assets/hero.png";
 import google from "../assets/google.png";
 import apple from "../assets/apple.png";
+import { NavLink } from "react-router";
 
 function Hero() {
   return (
@@ -11,15 +12,15 @@ function Hero() {
           <span className="text-[#9F62F2]">Productive</span> Apps
         </h1>
         <p className="text-[#627382] w-[1140px] text-center mx-auto mb-6">At HERO.IO , we craft innovative apps designed to make everyday life simpler, smarter, and more exciting. <br /> Our goal is to turn your ideas into digital experiences that truly make an impact.</p>
-     <div className="flex w-[250px] justify-between mx-auto mb-20">
-        <div className="flex items-center gap-2">
+     <div className="flex w-[250px] justify-between mx-auto mb-20 text-black">
+        <NavLink  to={"https://play.google.com/store/games?device=windows"} target="blank" className="flex items-center gap-2">
            <img src={google} alt="" />
             <p className="font-semibold">Google Play</p>
-        </div>
-        <div className="flex items-center gap-2">
+        </NavLink>
+        <NavLink to={"https://www.apple.com/app-store/"} target="blank" className="flex items-center text-black gap-2">
            <img src={apple} alt="" />
             <p className="font-semibold">App Store</p>
-        </div>
+        </NavLink>
      </div>
       </div>
       <div className="bottom">
