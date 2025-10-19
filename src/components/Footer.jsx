@@ -1,7 +1,7 @@
 import logo from "../assets/logo.png";
-// import facebook from "../assets/facebook.png";
-// import x from "../assets/logo.png";
-// import linkdin from "../assets/logo.png";
+import facebook from "../assets/facebook.png";
+import x from "../assets/x.png";
+import linkdin from "../assets/linkdin.png";
 
 function Footer() {
   return (
@@ -15,9 +15,10 @@ function Footer() {
         <div className="flex flex-col justify-center items-center">
         <p>Social Links</p>
         <div className="flex gap-3 mt-3 items-center justify-center">
-          <p>facebook</p>
-        <p>facebook</p>
-        <p>facebook</p>
+         <img src={facebook} alt="" />
+         <img src={x} alt="" />
+         <img src={linkdin} alt="" />
+        
         </div>
         </div>
       </div>
