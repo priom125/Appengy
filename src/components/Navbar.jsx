@@ -2,6 +2,7 @@ import React from "react";
 import { NavLink } from "react-router";
 import logo from "../assets/logo.png";
 import github from "../assets/github.png";
+import './Navbar.css'
 
 function Navbar() {
   return (
@@ -56,7 +57,7 @@ function Navbar() {
           </li>
           <li>
             {" "}
-            <NavLink to={"/installation"}>installation</NavLink>
+            <NavLink to={"/installation"}>Installation</NavLink>
           </li>
         </ul>
       </div>

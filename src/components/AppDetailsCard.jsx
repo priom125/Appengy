@@ -1,28 +1,59 @@
-import React from "react";
+import React, { useState } from "react";
 import downloadsIMG from "../assets/icon-downloads.png";
 import avgRatings from "../assets/icon-ratings.png";
 import review from "../assets/icon-review.png";
-import { Bar, BarChart, CartesianGrid, Legend, Tooltip, XAxis, YAxis } from "recharts";
-
+import {
+  Bar,
+  BarChart,
+  CartesianGrid,
+  Legend,
+  Tooltip,
+  XAxis,
+  YAxis,
+} from "recharts";
+import { ToastContainer, toast } from "react-toastify";
 
 function AppDetailsCard({ app }) {
   const ratings = app.ratings;
   //   console.log(ratings);
 
+  const notify = () => toast("Installed");
+  const isInstalledInitially = () => {
+    const existingList = JSON.parse(localStorage.getItem("installed") || "[]");
+    return existingList.some((a) => a.id === app.id);
+  };
+
+  const [isInstalled, setIsInstalled] = useState(isInstalledInitially);
+
   const handleInstall = () => {
-    const existingList = JSON.parse(localStorage.getItem('installed'))
-    let UpdatedList = []
-    if (existingList) {
-      const isDuplicate = existingList.some(a=> a.id === app.id)
-      if (isDuplicate) {
-        return alert("Already Installed")
-      }
-      UpdatedList = [...existingList, app]
-    }else{
-      UpdatedList.push(app)
+    if (isInstalled) return;
+
+    const existingList = JSON.parse(localStorage.getItem("installed") || "[]");
+    let UpdatedList = [...existingList];
+
+    const isDuplicate = existingList.some((a) => a.id === app.id);
+
+    if (!isDuplicate) {
+      UpdatedList.push(app);
+      localStorage.setItem("installed", JSON.stringify(UpdatedList));
     }
-     localStorage.setItem('installed', JSON.stringify(UpdatedList))
-  }
+    setIsInstalled(true);
+    notify();
+  };
+
+  const buttonText = isInstalled ? "Installed" : `Install Now ${app.size} MB`;
+
+  const isDisabled = isInstalled;
+
+  const buttonClass = `
+        btn mt-4 text-white outline-0 border-0 py-2 px-4 rounded transition duration-200
+        ${
+          isDisabled
+            ? "bg-gray-400 text-[#000] cursor-not-allowed"
+            : "bg-[#00D390] hover:bg-[#00b07a]"
+        }
+    `;
+
   return (
     <div className="bg-[#EEEEEE]  p-20 text-black">
       <div className="flex gap-10">
@@ -55,11 +86,14 @@ function AppDetailsCard({ app }) {
               <p className="text-2xl font-bold">{app.reviews}</p>
             </div>
           </div>
-          <button 
-          onClick={handleInstall}
-          className="btn mt-4 text-white bg-[#00D390] outline-0 border-0">
-            Install Now {app.size} MB
+          <button
+            onClick={handleInstall}
+            disabled={isDisabled}
+            className={buttonClass}
+          >
+            {buttonText}
           </button>
+          <ToastContainer/>
         </div>
       </div>
       {/* Card ends here */}
@@ -68,7 +102,7 @@ function AppDetailsCard({ app }) {
         <h1 className="text-xl font-semibold">Ratings</h1>
 
         <BarChart
-         layout="vertical"
+          layout="vertical"
           style={{
             width: "100%",
             maxWidth: "700px",
@@ -79,12 +113,11 @@ function AppDetailsCard({ app }) {
           data={ratings}
         >
           <CartesianGrid strokeDasharray="3 3" />
-          <XAxis dataKey="count" type="number "/>
-          
+          <XAxis dataKey="count" type="number " />
+
           <YAxis width="auto" dataKey="name" type="category" />
-       
-         <Bar dataKey="count" fill="#FF8811" />
-        
+
+          <Bar dataKey="count" fill="#FF8811" />
         </BarChart>
       </div>
 

@@ -1,0 +1,6 @@
+.menu li .active{
+    background-color: linear-gradient(to right, #632EE3, #9F62F2);
+    background: transparent;
+    text-decoration: underline;
+    
+}
