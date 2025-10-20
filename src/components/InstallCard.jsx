@@ -2,7 +2,15 @@ import React from "react";
 import downloadsIMG from "../assets/icon-downloads.png";
 import avgRatings from "../assets/icon-ratings.png";
 
-function InstallCard({ app }) {
+function InstallCard({ app,setInstallList}) {
+
+    const handleUnInstall = () => {
+    const existingList = JSON.parse(localStorage.getItem('installed'))
+    let UpdatedList = existingList.filter(a => a.id !== app.id)
+      setInstallList(prev => prev.filter(a => a.id !== app.id))
+     localStorage.setItem('installed', JSON.stringify(UpdatedList))
+  }
+
   return (
     <div className="flex items-center justify-between p-4 border-b border-gray-200 bg-white w-[1440px] h-[112px]">
       <div className="flex items-center justify-center gap-4">
@@ -37,7 +45,7 @@ function InstallCard({ app }) {
         </div>
       </div>
 
-      <button className="bg-[#00D390] text-white font-medium py-2 px-4 rounded-md cursor-pointer">
+      <button onClick={() => handleUnInstall(app.id)} className="bg-[#00D390] text-white font-medium py-2 px-4 rounded-md cursor-pointer">
         Uninstall
       </button>
     </div>

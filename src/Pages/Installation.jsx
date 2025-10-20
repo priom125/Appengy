@@ -3,12 +3,28 @@ import InstallCard from "../components/InstallCard";
 
 function Installation() {
   const [installList, setInstallList] = useState([]);
+  const [sortInstalled, setSortInstalled] = useState("none");
   useEffect(() => {
     const savedList = JSON.parse(localStorage.getItem("installed"));
     if (savedList) {
       setInstallList(savedList);
     }
   }, []);
+
+  const sortedItem = () =>{
+    if (sortInstalled === 'price-asc') {
+      return [...installList].sort((a,b) => a.size - b.size)
+    }else if (sortInstalled === 'price-desc') {
+       return [...installList].sort((a,b) => b.size - a.size)
+    }else{
+      return installList
+    }
+  }
+   
+
+
+
+
   return (
     <div className="bg-[#EEEEEE] text-black">
       <div className="bg-[#EEEEEE] flex items-center flex-col justify-center py-10">
@@ -22,12 +38,22 @@ function Installation() {
           <p className="text-xl font-semibold text-black">
             {installList.length} Apps Found{" "}
           </p>
-          <button>sort</button>
+          <label className="form-control w-full max-w-xs border-[#627382] bg-[#EEEEEE]">
+            <select
+              className="select select-bordered bg-transparent border-[#627382] placeholder-[#627382] text-black w-full"
+              value={sortInstalled}
+              onChange={(e) => setSortInstalled(e.target.value)}
+            >
+              <option value="none">Sort By Price</option>
+              <option value="price-asc">Low to High </option>
+              <option value="price-desc">High to Low </option>
+            </select>
+          </label>
         </div>
 
         <div className="flex flex-col gap-8 mt-20">
-          {installList.map((app) => (
-            <InstallCard key={app.id} app={app} />
+          {sortedItem().map((app) => (
+            <InstallCard key={app.id} app={app} setInstallList={setInstallList}/>
           ))}
         </div>
 
