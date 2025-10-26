@@ -46,14 +46,14 @@ function Apps() {
 
   return (
     <div>
-      <div className="bg-[#EEEEEE] flex items-center flex-col justify-center py-10">
-        <h1 className="text-5xl font-bold text-center pt-20 mb-6 text-black">
+      <div className="bg-[#EEEEEE] flex items-center flex-col justify-center py-10 px-4">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center pt-10 md:pt-20 mb-4 md:mb-6 text-black">
           Our All Applications
         </h1>
-        <p className="text-[#627382] w-[1140px] text-center mx-auto mb-6">
+        <p className="text-[#627382] max-w-xl md:max-w-4xl lg:max-w-6xl text-center mx-auto mb-6 text-sm sm:text-base">
           Explore All Apps on the Market developed by us. We code for Millions
         </p>
-        <div className="flex justify-between items-center w-[1440px] mt-10">
+        <div className="flex flex-col sm:flex-row justify-between items-center w-full max-w-7xl mt-6 sm:mt-10 px-4 gap-4">
           <p className="text-xl font-semibold text-black">{searchedProducts.length} Apps Found </p>
           <label className="input flex items-center gap-2 border border-[#627382] rounded-lg px-4 py-2 bg-transparent">
             <svg 
@@ -88,7 +88,7 @@ function Apps() {
           <Loading /> 
         ) : (
           searchedProducts.length > 0 ? (
-            <div className="grid grid-cols-4 gap-6 p-10">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 p-4 sm:p-6 md:p-10 w-full max-w-7xl">
               {searchedProducts.map((app) => (
                 <Card key={app.id} app={app} />
               ))}

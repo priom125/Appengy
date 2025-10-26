@@ -17,23 +17,25 @@ function Home() {
       <Hero />
       <Banner />
 
-      <div className="bg-[#EEEEEE] flex items-center flex-col justify-center py-10">
-        <h1 className="text-5xl font-bold text-black text-center pt-20 mb-6">
-          Trending Apps
-        </h1>
-        <p className="text-[#627382] w-[1140px] text-center mx-auto mb-6">
-          Explore All Trending Apps on the Market developed by us
-        </p>
-        <div className="grid grid-cols-4 gap-6 p-10">
-          {AppData.slice(0, 8).map((app) => (
+      <div className="bg-[#EEEEEE] flex items-center flex-col justify-center py-10 px-4">
+    <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-black text-center pt-10 md:pt-20 mb-4 md:mb-6">
+        Trending Apps
+    </h1>
+    <p className="text-[#627382] max-w-xl md:max-w-4xl lg:max-w-6xl text-center mx-auto mb-6 text-sm sm:text-base">
+        Explore All Trending Apps on the Market developed by us
+    </p>
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 p-4 sm:p-6 md:p-10 w-full max-w-7xl">
+        {AppData.slice(0, 8).map((app) => (
             <Card key={app.id} app={app} />
-          ))}
-        </div>
-        <div className="flex items-center justify-center w-[145px] h-[48px]">
-        <NavLink to={"/apps"} className="btn bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-white border-0">
-          Show All
+        ))}
+    </div>
+    <div className="flex items-center justify-center mt-6 mb-4">
+        <NavLink to={"/apps"} className="px-6 py-3 rounded-xl font-semibold bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-white shadow-lg transition duration-200 hover:opacity-90">
+            Show All
         </NavLink>
-      </div>
+    </div>
+
+
       </div>
       
     </div>
