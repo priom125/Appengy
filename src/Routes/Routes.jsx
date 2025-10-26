@@ -5,6 +5,7 @@ import MainLayouts from "../Layouts/MainLayouts";
 import Installation from "../Pages/Installation";
 import ErrorPages from "../Pages/ErrorPages";
 import AppDetails from "../Pages/AppDetails";
+import Loading from "../Pages/Loading";
 
 const router = createBrowserRouter([
   {
@@ -15,19 +16,25 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <Home />,
-        loader: () => fetch("./appData.json"),
+        loader: () => fetch("/appData.json"),
+        hydrateFallbackElement: <Loading />,
       },
       {
+        index:true,
         path: "/apps",
         element: <Apps />,
         loader: () => fetch("/appData.json"),
+        hydrateFallbackElement: <Loading />,
       },
       {
+        index:true,
         path: "/apps/:id",
         element: <AppDetails />,
         loader: () => fetch("/appData.json"),
+        hydrateFallbackElement: <Loading />,
       },
       {
+        index:true,
         path: "/installation",
         element: <Installation />,
         // loader: () => fetch('/appData.json')
