@@ -55,14 +55,14 @@ function AppDetailsCard({ app }) {
     `;
 
   return (
-   <div className="bg-[#EEEEEE] p-4 sm:p-8 md:p-12 lg:p-16 text-black max-w-7xl mx-auto">
+   <div className="bg-[#EEEEEE] p-4 sm:p-8 md:p-12 lg:p-16 text-black max-w-full mx-auto">
     <div className="flex flex-col md:flex-row gap-8 md:gap-10 pb-10 border-b border-gray-300">
         
-        <div className="img flex-shrink-0 w-full h-full md:w-full md:h-full mx-auto md:mx-0 rounded-2xl  shadow-xl">
-            <img src={app.image} alt={app.title} className="w-full h-full object-cover" />
+        <div className="img flex-shrink-0 w-[350px] h-[350px] md:max-w-full md:max-h-full mx-auto md:mx-0 rounded-2xl  shadow-xl">
+            <img src={app.image} alt={app.title} className="w-[350px] h-[350px] object-cover" />
         </div>
 
-        <div className="content w-full">
+        <div className="content max-w-full">
             <h1 className="text-3xl sm:text-4xl font-bold text-center md:text-left">{app.title}</h1>
             <p className="text-[#627382] mb-4 text-center md:text-left">
                 Developed by{" "}
