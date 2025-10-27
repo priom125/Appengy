@@ -26,7 +26,7 @@ function Installation() {
 
   return (
     <div className="bg-[#EEEEEE] text-black px-4">
-      <div className="bg-[#EEEEEE] flex items-center flex-col justify-center py-10 max-w-7xl mx-auto">
+      <div className="bg-[#EEEEEE] flex items-center flex-col justify-center py-10 max-w-full mx-auto">
         
         <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center pt-10 md:pt-20 mb-4 md:mb-6 text-black">
           Your Installed Apps
@@ -52,7 +52,7 @@ function Installation() {
           </label>
         </div>
 
-        <div className="flex flex-col gap-8 mt-10 md:mt-20 w-full max-w-4xl">
+        <div className="grid md:grid-cols-2 sm:grid-cols-1 lg:grid-cols-3 gap-6 p-4 sm:p-6 md:p-10 w-full max-w-full">
           {displayedApps.length > 0 ? (
              displayedApps.map((app) => (
               <InstallCard key={app.id} app={app} setInstallList={setInstallList}/>

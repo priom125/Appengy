@@ -88,7 +88,7 @@ function Apps() {
           <Loading /> 
         ) : (
           searchedProducts.length > 0 ? (
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 p-4 sm:p-6 md:p-10 w-full max-w-7xl">
+            <div className="grid md:grid-cols-2 sm:grid-cols-1 lg:grid-cols-3 gap-6 p-4 sm:p-6 md:p-10 w-full max-w-full">
               {searchedProducts.map((app) => (
                 <Card key={app.id} app={app} />
               ))}

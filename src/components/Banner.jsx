@@ -2,7 +2,7 @@ import React from 'react'
 
 function Banner() {
   return (
-    <div className='bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-white text-center p-10 sm:p-16 md:p-20 rounded-xl mx-4 md:mx-auto max-w-7xl'>
+    <div className='bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-white text-center sm:p-16 md:p-20 rounded-xl mx-4 md:mx-auto max-w-full'>
           <h1 className='text-3xl sm:text-4xl md:text-5xl text-center font-bold'>Trusted by Millions, Built for You</h1>
           
           <div className="flex flex-col md:flex-row justify-center items-center md:space-x-8 lg:space-x-16 mt-8 md:mt-12">

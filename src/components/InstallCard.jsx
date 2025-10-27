@@ -12,7 +12,7 @@ function InstallCard({ app,setInstallList}) {
   }
 
   return (
-    <div className="flex items-center justify-between p-4 border-b border-gray-200 bg-white w-[1440px] h-[112px]">
+    <div className="flex items-center justify-between p-4 border-b border-gray-200 bg-white max-w-[1440px] max-h-[112px]">
       <div className="flex items-center justify-center gap-4">
         <div className="w-[80px] h-[80px] rounded-lg justify-center items-center">
           <img src={app.image} alt="" className="rounded-lg mt-2.5"/>
@@ -43,11 +43,12 @@ function InstallCard({ app,setInstallList}) {
             <span className="text-[#627382]">{app.size} MB</span>
           </div>
         </div>
+   
       </div>
-
       <button onClick={() => handleUnInstall(app.id)} className="bg-[#00D390] text-white font-medium py-2 px-4 rounded-md cursor-pointer">
         Uninstall
       </button>
+     
     </div>
   );
 }
