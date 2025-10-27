@@ -52,7 +52,7 @@ function Installation() {
           </label>
         </div>
 
-        <div className="grid md:grid-cols-2 sm:grid-cols-1 lg:grid-cols-3 gap-6 p-4 sm:p-6 md:p-10 w-full max-w-full">
+        <div className="grid grid-cols-1 gap-6 p-4 sm:p-6 md:p-10 w-full max-w-full">
           {displayedApps.length > 0 ? (
              displayedApps.map((app) => (
               <InstallCard key={app.id} app={app} setInstallList={setInstallList}/>
