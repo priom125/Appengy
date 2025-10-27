@@ -14,7 +14,7 @@ function InstallCard({ app,setInstallList}) {
   return (
     <div className="flex items-center justify-between p-4 border-b border-gray-200 bg-white max-w-[1440px] max-h-[112px]">
       <div className="flex items-center justify-center gap-4">
-        <div className="w-[80px] h-[80px] rounded-lg justify-center items-center">
+        <div className="maxw-[80px] max-h-[80px] rounded-lg justify-center items-center">
           <img src={app.image} alt="" className="rounded-lg mt-2.5"/>
         </div>
 
